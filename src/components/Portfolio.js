@@ -21,8 +21,8 @@ import project6 from '../.././static/images/project6.jpg';
 import project7 from '../.././static/images/project7.jpg';
 import project8 from '../.././static/images/project8.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {SiJava, SiMysql, SiPython, SiBootstrap} from 'react-icons/SI';
-import {DiCss3, DiDjango, DiHtml5, DiJavascript} from 'react-icons/DI';
+import {SiJava, SiMysql, SiPython, SiBootstrap} from 'react-icons/si';
+import {DiCss3, DiDjango, DiHtml5, DiJavascript} from 'react-icons/di';
 
 const Portfolio = () => {
     const classes = useStyles(); // To use the CSS Styles in styles.js

@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import Navbar from "./Navbar";
 import {Avatar, Box, Button, Grid, Typography} from "@material-ui/core";
-import avatar from "../../static/images/avatar.jpg";
 import Typed from "react-typed";
 import {useStyles} from "../../static/styles/styles";
-import {Link} from "react-router-dom";
 import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
 import SendIcon from "@material-ui/icons/Send";
 
