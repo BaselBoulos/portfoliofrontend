@@ -6,7 +6,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import About from "./About";
 
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Switch, Route} from "react-router-dom";
 
 class App extends Component {
     constructor(props) {
