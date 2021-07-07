@@ -51,7 +51,7 @@ const Contact = () => {
                 message: message,
             }),
         };
-        fetch("http://127.0.0.1:8000/backend/contact-me/", requestOptions)
+        fetch("https://baselportfoliobackend.herokuapp.com/backend/contact-me/", requestOptions)
             .then((response) => {
                 if (response.ok) {
                     console.log("Email sent successfully")
