@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navbar from "./Navbar";
-import {Avatar, Box, Button, Grid, Typography} from "@material-ui/core";
+import {Box, Button, Grid, Typography} from "@material-ui/core";
 import Typed from "react-typed";
 import {useStyles} from "../../static/styles/styles";
 import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";

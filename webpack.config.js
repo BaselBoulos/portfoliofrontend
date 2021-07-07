@@ -15,7 +15,6 @@ module.exports = {
         clean: true,
         path: path.resolve(__dirname, "dist"),
         filename: 'main.js',
-        assetModuleFilename: "images/[hash][ext][query]",
         publicPath: '/'
     },
     module: {

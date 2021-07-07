@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Avatar, Box, Button, Grid, Typography} from "@material-ui/core";
 import avatar from '../.././static/images/avatar.jpg';
 import Typed from "react-typed";
