@@ -173,6 +173,19 @@ const useStyles = makeStyles(theme => ({
             }
         }
     },
+    aboutBoxContainer: {
+        background: "#233",
+        height: "100vh",
+        textAlign: "center",
+    },
+    aboutHeaderTitle: {
+        color: "tomato",
+        textAlign: "center",
+    },
+    aboutHeaderSubtitle: {
+        color: "tan",
+        textAlign: "center"
+    },
 }));
 export {useStyles};
 

@@ -10,51 +10,42 @@ const About = () => {
     const classes = useStyles(); // To use the CSS Styles in styles.js
     return (
         <>
-        <Navbar/>
-        <Box className={classes.boxContainer}>
-            <Typography className={classes.headerTitle} variant="h4">
-                <Typed strings={["About Me"]}
-                    typeSpeed={50}
-                />
-            </Typography>
-            <br/>
-            <Typography className={classes.headerSubtitle} variant="h5">
-                Hello! My name is Basel a recent practical software engineer graduate, Who has never stopped
-                <br/>
-                learning new technologies and spending time trying out new stuff, is looking
-                for his first job as a
-                <br/>
-                Full-Stack/Back-End/Frontend developer.
-                <br/>
-                <br/>
-                I also have 7 years of experience working in production planning and
-                control management office,
-                <br/>
-                with 2 years of being a digital nomad ( Remote working while living abroad ).
-                <br/>
-                <br/>
-                My time outside of Developing/Working and learning is spent
-                exploring our beautiful world,
-                <br/>
-                hiking or reading a book in the nature, gaining new experiences, I am also a
-                <br/>
-                 Traveler who has explored more than 15 different countries Alone.
-            </Typography>
-            <br/>
-            <a href={CV} target="_blank">
-                <Button
-                    style={{
-                        backgroundColor: '#ff6347',
-                        textDecoration:"inherit"
-                    }}
-                    variant="outlined"
-                    fullWidth={false}
-                    endIcon={<SendIcon/>}
-                >
-                    Download CV
-                </Button>
-            </a>
-        </Box>
+            <Box component="div" className={classes.aboutBoxContainer}>
+                <Navbar/>
+                <Grid container justify="center" alignItems="center">
+                    <Grid item xs={12} sm={8} md={8}>
+                        <Typography className={classes.aboutHeaderTitle} variant="h4">
+                            <Typed strings={["About me"]}
+                                   typeSpeed={50}
+                            />
+                        </Typography>
+                    <br/>
+                    <Typography className={classes.aboutHeaderSubtitle} variant="h5">
+                        Hello! My name is basel a recent practical software engineer graduate, Who has never stopped
+                        learning new technologies and spending time trying out new stuff, and now looking for my first job
+                        as a Full-Stack/Back-End/Front-end developer. I also have 7 years of experience working in production
+                        planning and control management office,with 2 years of being a digital nomad
+                        ( Remote working while living abroad ) My time outside of Developing/Working and learning is spent
+                        exploring and learning from our beautiful world, I'm a traveler who has explored more than 15 different
+                        countries alone.
+                    </Typography>
+                    <br/>
+                    <a href={CV} target="_blank">
+                        <Button
+                            style={{
+                                backgroundColor: '#ff6347',
+                                textDecoration: "inherit",
+                            }}
+                            variant="outlined"
+                            fullWidth={false}
+                            endIcon={<SendIcon/>}
+                        >
+                            Download CV
+                        </Button>
+                    </a>
+                    </Grid>
+                </Grid>
+            </Box>
         </>
     );
 }

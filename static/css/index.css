@@ -1,5 +1,6 @@
 html, body {
     background: url(../../static/images/coffee-apple.jpg) no-repeat center center fixed;
+    background-size: cover;
     height: 100%;
     width: 100%;
     margin: 0;
