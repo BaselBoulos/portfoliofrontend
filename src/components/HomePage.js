@@ -14,7 +14,7 @@ const Homepage = () => {
                params={{
                    particles: {
                        number: {
-                           value: 0,
+                           value: 45,
                            density: {
                                enable: false,
                                value_area: 900
