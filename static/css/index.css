@@ -1,0 +1,8 @@
+html, body {
+    background: url(../../static/images/coffee-apple.jpg) no-repeat center center fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
