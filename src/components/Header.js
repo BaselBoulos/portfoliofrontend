@@ -24,7 +24,6 @@ const Header = () => {
                        backSpeed={50}
                        loop/>
             </Typography>
-            <br/>
             <Link to="/about">
             <Button className={classes.aboutButton}
                 variant="outlined"

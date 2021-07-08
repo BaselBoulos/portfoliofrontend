@@ -18,8 +18,8 @@ const useStyles = makeStyles(theme => ({
         color: "tan",
     },
     headerAvatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(13),
+        height: theme.spacing(13),
         margin: theme.spacing(1),
     },
     headerTitle: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     },
     headerSubtitle: {
         color: "tan",
-        marginBottom: "3rem"
+        marginBottom: "1rem"
     },
     boxContainer: {
         position: "absolute",
