@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {useStyles} from '../../static/styles/styles';
 import Navbar from "./Navbar";
 import {
@@ -9,7 +9,6 @@ import {
     CardActions,
     CardContent,
     CardMedia,
-    Button,
     Typography, BottomNavigationAction, BottomNavigation
 } from "@material-ui/core";
 import project1 from '../.././static/images/project1.jpg';

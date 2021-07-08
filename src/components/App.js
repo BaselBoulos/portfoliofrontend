@@ -16,15 +16,15 @@ class App extends Component {
         return (
             <div className="center">
                 <Router>
-                    <Suspense fallback={<div>Loading...</div>}>
                     <Switch>
                     <Route exact path="/" component={HomePage}/>
+                    <Suspense fallback={<div>Loading...</div>}>
                     <Route path="/cv" component={Cv}/>
                     <Route path="/portfolio" component={Portfolio}/>
                     <Route path="/contact" component={Contact}/>
                     <Route path="/about" component={About}/>
-                    </Switch>
                     </Suspense>
+                    </Switch>
                 </Router>
             </div>
         );

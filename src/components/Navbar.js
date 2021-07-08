@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Footer from "./Footer";
+import React, {lazy, useState, Suspense} from 'react';
+const Footer = lazy(() => import('./Footer'));
 import {
     AppBar,
     Typography,
@@ -91,7 +91,9 @@ const Navbar = () => {
                             onClose={toggleSlider("right", false)}
                         >
                             {sideList("right")}
+                         <Suspense fallback={<div>Loading...</div>}>
                             <Footer/>
+                         </Suspense>
                         </MobileRightMenuSlider>
                     </Toolbar>
                 </AppBar>

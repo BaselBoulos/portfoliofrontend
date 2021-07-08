@@ -10,7 +10,7 @@ const Cv = () => {
     const classes = useStyles(); // To use the CSS Styles in styles.js
     return (
         <>
-        <Box component="div" style={{background: "#233", height: "100vh"}}>
+        <Box component="div" className={classes.cvContainer}>
             <Navbar/>
             <Grid container justify="center">
                 <Box component="form" className={classes.form}>

@@ -164,6 +164,7 @@ const useStyles = makeStyles(theme => ({
         "& .MuiBottomNavigationAction-root": {
             minWidth: 0,
             maxWidth: 250,
+            padding: 0,
         },
         "& .MuiSvgIcon-root": {
             fill: "tan",
@@ -186,6 +187,23 @@ const useStyles = makeStyles(theme => ({
         color: "tan",
         textAlign: "center"
     },
+    contactContainer: {
+        background: "#233",
+        height: "100vh",
+    },
+    contactTypography:{
+        color: "tomato",
+        textAlign: "center",
+        textTransform: "uppercase",
+    },
+    cvContainer:{
+        background: "#233",
+        height: "100vh",
+    },
+    aboutButton: {
+        backgroundColor: '#ff6347',
+        textDecoration: "inherit",
+    }
 }));
 export {useStyles};
 

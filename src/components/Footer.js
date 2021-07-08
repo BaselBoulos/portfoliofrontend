@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BottomNavigation, BottomNavigationAction} from "@material-ui/core";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -11,7 +11,6 @@ const Footer = () => {
         <BottomNavigation width="auto" style={{background: "#222"}}>
             <BottomNavigationAction
                 className={classes.root}
-                style={{padding: 0}}
                 icon={
                     <a href="https://github.com/BaselBoulos">
                         <GitHubIcon/>
@@ -20,7 +19,6 @@ const Footer = () => {
             />
             <BottomNavigationAction
                 className={classes.root}
-                style={{padding: 0}}
                 icon={
                     <a href="https://www.instagram.com/baselboulos/">
                         <InstagramIcon/>
@@ -29,7 +27,6 @@ const Footer = () => {
             />
             <BottomNavigationAction
                 className={classes.root}
-                style={{padding: 0}}
                 icon={
                     <a href="https://www.linkedin.com/in/baselboulos/">
                         <LinkedInIcon/>

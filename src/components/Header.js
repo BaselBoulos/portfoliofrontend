@@ -26,11 +26,7 @@ const Header = () => {
             </Typography>
             <br/>
             <Link to="/about">
-            <Button
-                style={{
-                    backgroundColor: '#ff6347',
-                    textDecoration: "inherit"
-                }}
+            <Button className={classes.aboutButton}
                 variant="outlined"
                 fullWidth={false}>
                 About Me

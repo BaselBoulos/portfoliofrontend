@@ -66,16 +66,11 @@ const Contact = () => {
     const classes = useStyles(); // To use the CSS Styles in styles.js
     return (
         <>
-            <Box component="div" style={{background: "#233", height: "100vh"}}>
+            <Box component="div" className={classes.contactContainer}>
                 <Navbar/>
                 <Grid container justify="center">
                     <Box component="form" className={classes.form}>
-                        <Typography variant="h5" style={{
-                            color: "tomato",
-                            textAlign: "center",
-                            textTransform: "uppercase",
-                        }}
-                        >
+                        <Typography variant="h5" className={classes.contactTypography}>
                             Contact me
                         </Typography>
                         <InputField

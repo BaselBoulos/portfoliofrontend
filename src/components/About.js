@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from "./Navbar";
 import {Box, Button, Grid, Typography} from "@material-ui/core";
 import Typed from "react-typed";
 import {useStyles} from "../../static/styles/styles";
 import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
 import SendIcon from "@material-ui/icons/Send";
+import Navbar from "./Navbar";
 
 const About = () => {
     const classes = useStyles(); // To use the CSS Styles in styles.js
@@ -31,11 +31,7 @@ const About = () => {
                     </Typography>
                     <br/>
                     <a href={CV} target="_blank">
-                        <Button
-                            style={{
-                                backgroundColor: '#ff6347',
-                                textDecoration: "inherit",
-                            }}
+                        <Button className={classes.aboutButton}
                             variant="outlined"
                             fullWidth={false}
                             endIcon={<SendIcon/>}

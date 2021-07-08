@@ -42,7 +42,7 @@ module.exports = {
     plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({
         template: "./src/index.html"
     })],
-    devtool: "source-map",
+    // devtool: "source-map",
     devServer: {
         contentBase: "./dist",
         historyApiFallback: true,
