@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Button, Grid, Typography} from "@material-ui/core";
 import Typed from "react-typed";
 import {useStyles} from "../../static/styles/styles";
-import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
+// import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
@@ -21,16 +21,10 @@ const About = () => {
                         </Typography>
                     <br/>
                     <Typography className={classes.aboutHeaderSubtitle} variant="h5">
-                        Hello! My name is basel a recent practical software engineer graduate, Who has never stopped
-                        learning new technologies and spending time trying out new stuff, and now looking for my first job
-                        as a Full-Stack/Back-End/Front-end developer. I also have 7 years of experience working in production
-                        planning and control management office,with 2 years of being a digital nomad
-                        ( Remote working while living abroad ) My time outside of Developing/Working and learning is spent
-                        exploring and learning from our beautiful world, I'm a traveler who has explored more than 15 different
-                        countries alone.
+                        About me things
                     </Typography>
                     <br/>
-                    <a href={CV} target="_blank">
+                    <a target="_blank">
                         <Button className={classes.aboutButton}
                             variant="outlined"
                             fullWidth={false}

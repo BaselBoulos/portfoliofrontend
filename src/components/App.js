@@ -1,7 +1,7 @@
 import React, {Component, Suspense, lazy} from "react";
 import {render} from "react-dom";
 import HomePage from "./HomePage";
-const Cv = lazy(() => import('./Cv'));
+// const Cv = lazy(() => import('./Cv'));
 const Portfolio = lazy(() => import('./Portfolio'));
 const Contact = lazy(() => import('./Contact'));
 const About = lazy(() => import('./About'));
@@ -19,7 +19,7 @@ class App extends Component {
                     <Switch>
                     <Route exact path="/" component={HomePage}/>
                     <Suspense fallback={<div>Loading...</div>}>
-                    <Route path="/cv" component={Cv}/>
+                    {/*<Route path="/cv" component={Cv}/>*/}
                     <Route path="/portfolio" component={Portfolio}/>
                     <Route path="/contact" component={Contact}/>
                     <Route path="/about" component={About}/>

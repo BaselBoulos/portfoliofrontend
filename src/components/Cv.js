@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {useStyles} from '../../static/styles/styles';
 import {Box, Button, Grid} from "@material-ui/core";
 import Navbar from "./Navbar"
-import CV from '../.././static/CV/Basel Boulos - CV - Israel.pdf';
+// import CV from '../.././static/CV/Basel Boulos - CV - Israel.pdf';
 import SendIcon from "@material-ui/icons/Send";
 
 

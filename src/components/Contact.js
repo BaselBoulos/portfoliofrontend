@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navbar from "./Navbar";
 import {useStyles} from '../../static/styles/styles';
 import {TextField, Typography, Button, Grid, Box, withStyles} from "@material-ui/core";
