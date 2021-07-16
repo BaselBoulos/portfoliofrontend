@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Button, Grid, Typography} from "@material-ui/core";
 import Typed from "react-typed";
 import {useStyles} from "../../static/styles/styles";
-// import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
+import CV from "../../static/CV/Basel Boulos - CV - Israel.pdf";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
@@ -21,10 +21,10 @@ const About = () => {
                         </Typography>
                     <br/>
                     <Typography className={classes.aboutHeaderSubtitle} variant="h5">
-                        About me things
+                        Working on this page, Will be updated Soon!
                     </Typography>
                     <br/>
-                    <a target="_blank">
+                    <a href={CV} target="_blank">
                         <Button className={classes.aboutButton}
                             variant="outlined"
                             fullWidth={false}
