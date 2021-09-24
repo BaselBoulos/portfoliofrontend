@@ -275,83 +275,83 @@ const Portfolio = () => {
                         </Card>
                     </Grid>
                     {/* Project 3 - MIT 2 */}
-                    <Grid item xs={12} sm={8} md={6}>
-                        <Card className={classes.portfolioCardContainer}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    alt="MIT6.00.2x"
-                                    height="150"
-                                    image={project3}/>
-                                <CardContent className={classes.portfolioCardContent}>
-                                    <Typography gutterBottom variant="h6">
-                                        MIT6.00.2x - CS Course
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        An introduction to using computation to understand real-world phenomena.
-                                        I learned in this course Plotting with the pylab package, Stochastic programming
-                                        and statistical thinking, Monte Carlo simulations. 150+ Hours Course.
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <BottomNavigation
-                                    width="auto"
-                                    showLabels
-                                    className={classes.portfolioCardButtons}>
-                                    <BottomNavigationAction
-                                        label="GitHub"
-                                        icon={
-                                            <a href="https://github.com/BaselBoulos/MIT6.00.2x-Course">
-                                                <GitHubIcon/>
-                                            </a>
-                                        }
-                                    />
-                                </BottomNavigation>
-                                <SiPython/>
-                            </CardActions>
-                        </Card>
-                    </Grid>
+                    {/*<Grid item xs={12} sm={8} md={6}>*/}
+                    {/*    <Card className={classes.portfolioCardContainer}>*/}
+                    {/*        <CardActionArea>*/}
+                    {/*            <CardMedia*/}
+                    {/*                component="img"*/}
+                    {/*                alt="MIT6.00.2x"*/}
+                    {/*                height="150"*/}
+                    {/*                image={project3}/>*/}
+                    {/*            <CardContent className={classes.portfolioCardContent}>*/}
+                    {/*                <Typography gutterBottom variant="h6">*/}
+                    {/*                    MIT6.00.2x - CS Course*/}
+                    {/*                </Typography>*/}
+                    {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
+                    {/*                    An introduction to using computation to understand real-world phenomena.*/}
+                    {/*                    I learned in this course Plotting with the pylab package, Stochastic programming*/}
+                    {/*                    and statistical thinking, Monte Carlo simulations. 150+ Hours Course.*/}
+                    {/*                </Typography>*/}
+                    {/*            </CardContent>*/}
+                    {/*        </CardActionArea>*/}
+                    {/*        <CardActions>*/}
+                    {/*            <BottomNavigation*/}
+                    {/*                width="auto"*/}
+                    {/*                showLabels*/}
+                    {/*                className={classes.portfolioCardButtons}>*/}
+                    {/*                <BottomNavigationAction*/}
+                    {/*                    label="GitHub"*/}
+                    {/*                    icon={*/}
+                    {/*                        <a href="https://github.com/BaselBoulos/MIT6.00.2x-Course">*/}
+                    {/*                            <GitHubIcon/>*/}
+                    {/*                        </a>*/}
+                    {/*                    }*/}
+                    {/*                />*/}
+                    {/*            </BottomNavigation>*/}
+                    {/*            <SiPython/>*/}
+                    {/*        </CardActions>*/}
+                    {/*    </Card>*/}
+                    {/*</Grid>*/}
                     {/* Project 2 - MIT 1 */}
-                    <Grid item xs={12} sm={8} md={6}>
-                        <Card className={classes.portfolioCardContainer}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    alt="MIT6.00.1x"
-                                    height="150"
-                                    image={project2}/>
-                                <CardContent className={classes.portfolioCardContent}>
-                                    <Typography gutterBottom variant="h6">
-                                        MIT6.00.1x - CS Course
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        An introduction to computer science as a tool to solve real-world
-                                        analytical problems I learned in this course, A Notion of computation,
-                                        The Python programming language, Some simple algorithms, Testing and debugging,
-                                        An informal introduction to algorithmic complexity, and Data structures
-                                        150+ Hours Course.
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <BottomNavigation
-                                    width="auto"
-                                    showLabels
-                                    className={classes.portfolioCardButtons}>
-                                    <BottomNavigationAction
-                                        label="GitHub"
-                                        icon={
-                                            <a href="https://github.com/BaselBoulos/MIT6.00.1x-Course">
-                                                <GitHubIcon/>
-                                            </a>
-                                        }
-                                    />
-                                </BottomNavigation>
-                                <SiPython/>
-                            </CardActions>
-                        </Card>
-                    </Grid>
+                    {/*<Grid item xs={12} sm={8} md={6}>*/}
+                    {/*    <Card className={classes.portfolioCardContainer}>*/}
+                    {/*        <CardActionArea>*/}
+                    {/*            <CardMedia*/}
+                    {/*                component="img"*/}
+                    {/*                alt="MIT6.00.1x"*/}
+                    {/*                height="150"*/}
+                    {/*                image={project2}/>*/}
+                    {/*            <CardContent className={classes.portfolioCardContent}>*/}
+                    {/*                <Typography gutterBottom variant="h6">*/}
+                    {/*                    MIT6.00.1x - CS Course*/}
+                    {/*                </Typography>*/}
+                    {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
+                    {/*                    An introduction to computer science as a tool to solve real-world*/}
+                    {/*                    analytical problems I learned in this course, A Notion of computation,*/}
+                    {/*                    The Python programming language, Some simple algorithms, Testing and debugging,*/}
+                    {/*                    An informal introduction to algorithmic complexity, and Data structures*/}
+                    {/*                    150+ Hours Course.*/}
+                    {/*                </Typography>*/}
+                    {/*            </CardContent>*/}
+                    {/*        </CardActionArea>*/}
+                    {/*        <CardActions>*/}
+                    {/*            <BottomNavigation*/}
+                    {/*                width="auto"*/}
+                    {/*                showLabels*/}
+                    {/*                className={classes.portfolioCardButtons}>*/}
+                    {/*                <BottomNavigationAction*/}
+                    {/*                    label="GitHub"*/}
+                    {/*                    icon={*/}
+                    {/*                        <a href="https://github.com/BaselBoulos/MIT6.00.1x-Course">*/}
+                    {/*                            <GitHubIcon/>*/}
+                    {/*                        </a>*/}
+                    {/*                    }*/}
+                    {/*                />*/}
+                    {/*            </BottomNavigation>*/}
+                    {/*            <SiPython/>*/}
+                    {/*        </CardActions>*/}
+                    {/*    </Card>*/}
+                    {/*</Grid>*/}
                 </Grid>
             </Box>
         </>
