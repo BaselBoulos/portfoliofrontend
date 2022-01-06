@@ -1,11 +1,11 @@
 import React from 'react'
-import { Box, Button, Grid, Typography } from '@material-ui/core'
-import Typed from 'react-typed'
-import { useStyles } from '../../static/styles/styles'
-import CV from '../../static/CV/Basel Boulos - CV - Israel.pdf'
-import SendIcon from '@material-ui/icons/Send'
-import Navbar from './Navbar'
 import { Link } from 'react-router-dom';
+import Typed from 'react-typed'
+import { Box, Button, Grid, Typography } from '@material-ui/core'
+import { useStyles } from '../../static/styles/styles'
+import SendIcon from '@material-ui/icons/Send'
+import CV from '../../static/CV/Basel Boulos - CV - Israel.pdf'
+import Navbar from './Navbar'
 
 const About = () => {
 	const classes = useStyles() // To use the CSS Styles in styles.js
