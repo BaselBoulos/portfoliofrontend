@@ -1,15 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useStyles } from '../../static/styles/styles'
 import { Avatar, Box, Button, Grid, Typography } from '@material-ui/core'
-import avatar from '../.././static/images/avatar.jpg'
+import avatar from '../../assets/img/avatar.jpg'
 import Typed from 'react-typed'
+import { useStyles } from '../../styles/styles'
+import { Link } from 'react-router-dom'
 
-const Header = () => {
-	const classes = useStyles() // To use the CSS Styles in styles.js
+export const HomePage = () => {
+	const classes = useStyles()
 	return (
 		<Box className={classes.boxContainer}>
-			<Grid container justify="center">
+			<Grid container justifyContent="center">
 				<Avatar className={classes.headerAvatar} src={avatar} alt="Basel Boulos" />
 			</Grid>
 			<Typography className={classes.headerTitle} variant="h4">
@@ -27,5 +26,3 @@ const Header = () => {
 		</Box>
 	)
 }
-
-export default Header
