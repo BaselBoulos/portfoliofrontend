@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from 'react'
 import { ArrowBack } from '@material-ui/icons'
-import { Box, AppBar, Toolbar, IconButton, Typography, Avatar } from '@material-ui/core'
+import { Box, AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
 import MobileRightMenuSlider from '@material-ui/core/Drawer'
 import { SideList } from './SideList'
 import { SideListFooter } from './SideListFooter'
