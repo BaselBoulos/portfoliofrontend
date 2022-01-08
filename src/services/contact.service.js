@@ -6,7 +6,7 @@ export const contactService = {
 
 async function contact(info) {
 	try {
-		await axios.post(`http://127.0.0.1:8000/backend/contact-me/`, info)
+		return await axios.post(`https://baselportfoliobackend.herokuapp.com/backend/contact-me/`, info)
 	} catch (error) {
 		console.log()
 	}
