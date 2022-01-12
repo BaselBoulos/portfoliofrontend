@@ -37,7 +37,7 @@ export const SideList = ({ toggleSlider }) => {
 	return (
 		<>
 			<Box className={classes.navbarMenu} component="div" onClick={toggleSlider('right', false)}>
-				<Avatar className={classes.navbarAvatar} src={avatar} alt="Basel Boulos" />
+				<Avatar className={classes.root} src={avatar} alt="Basel Boulos" />
 				<List>
 					{menuItems.map((lsItem, key) => (
 						<ListItem button key={key} component={Link} to={lsItem.listPath}>

@@ -1,26 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-// React Components CSS styles
-// Navbar Styles.
 export const useStyles = makeStyles(theme => ({
 	navbarMenu: {
 		width: 250,
 		background: '#511',
 		height: '100%'
 	},
-	navbarAvatar: {
-		display: 'block',
-		margin: '0.5rem auto',
-		width: theme.spacing(13),
-		height: theme.spacing(13)
-	},
 	listItem: {
 		color: 'tan'
-	},
-	headerAvatar: {
-		width: theme.spacing(13),
-		height: theme.spacing(13),
-		margin: theme.spacing(1)
 	},
 	headerTitle: {
 		color: 'tomato'
@@ -34,14 +21,8 @@ export const useStyles = makeStyles(theme => ({
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		textAlign: 'center'
-	},
-	particlesCanvas: {
-		position: 'absolute',
-		opacity: '0.3'
-	},
-	cvMainContainer: {
-		background: '#233'
+		textAlign: 'center',
+		width: '100%'
 	},
 	portfolioMainContainer: {
 		background: '#233',
@@ -74,6 +55,11 @@ export const useStyles = makeStyles(theme => ({
 		position: 'absolute'
 	},
 	root: {
+		'&.MuiAvatar-root': {
+			width: theme.spacing(13),
+			height: theme.spacing(13),
+			margin: '0.5rem auto',
+		},
 		'& .MuiBottomNavigationAction-root': {
 			minWidth: 0,
 			maxWidth: 250,
@@ -82,8 +68,7 @@ export const useStyles = makeStyles(theme => ({
 		'& .MuiSvgIcon-root': {
 			fill: 'tan',
 			'&:hover': {
-				fill: 'tomato',
-				fontSize: '1.8rem'
+				fill: 'tomato'
 			}
 		},
 		'& label.Mui-focused': {
@@ -130,7 +115,7 @@ export const useStyles = makeStyles(theme => ({
 		background: '#233',
 		height: '100vh'
 	},
-	aboutButton: {
+	styledButton: {
 		backgroundColor: '#ff6347',
 		textDecoration: 'inherit'
 	}

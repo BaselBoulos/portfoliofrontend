@@ -12,14 +12,14 @@ export const ContactPage = () => {
 	function onSubmit() {
 		contactService.contact(info)
 	}
-	
+
 	const { name, email, companyName, message } = info
 	return (
 		<>
 			<Box component="div" className={classes.contactContainer}>
 				<Grid container justifyContent="center">
 					<Box component="form" className={classes.form}>
-						<Typography variant="h5" className={classes.contactTypography}>
+						<Typography varia8nt="h5" className={classes.contactTypography}>
 							Contact me
 						</Typography>
 						<TextField
@@ -70,7 +70,7 @@ export const ContactPage = () => {
 							margin="dense"
 							size="medium"
 						/>
-						<Button style={{ backgroundColor: '#ff6347' }} variant="outlined" fullWidth={true} endIcon={<SendIcon />} onClick={onSubmit}>
+						<Button className={classes.styledButton} variant="outlined" fullWidth={true} endIcon={<SendIcon />} onClick={onSubmit}>
 							Contact me
 						</Button>
 					</Box>

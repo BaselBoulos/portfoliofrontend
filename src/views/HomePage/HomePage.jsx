@@ -9,20 +9,18 @@ export const HomePage = () => {
 	return (
 		<Box className={classes.boxContainer}>
 			<Grid container justifyContent="center">
-				<Avatar className={classes.headerAvatar} src={avatar} alt="Basel Boulos" />
+				<Avatar className={classes.root} src={avatar} alt="Basel Boulos" />
 			</Grid>
 			<Typography className={classes.headerTitle} variant="h4">
 				<Typed strings={['Basel Boulos']} typeSpeed={50} />
 			</Typography>
 			<br />
 			<Typography className={classes.headerSubtitle} variant="h5">
-				<Typed strings={['Full-Stack/Frontend Web Developer']} typeSpeed={40} backSpeed={50} loop />
+				<Typed strings={['Full Stack/Frontend Web Developer']} typeSpeed={40} backSpeed={50} loop />
 			</Typography>
-			<Link to="/about">
-				<Button className={classes.aboutButton} variant="outlined" fullWidth={false}>
-					About Me
-				</Button>
-			</Link>
+			<Button component={Link} to="/about" className={classes.styledButton} variant="outlined" fullWidth={false}>
+				About Me
+			</Button>
 		</Box>
 	)
 }
