@@ -6,7 +6,7 @@ import InfoIcon from '@material-ui/icons/Info'
 import avatar from '../assets/img/avatar.jpg'
 
 export const SideList = ({ toggleSlider }) => {
-	const classes = useStyles() // To use the CSS Styles in styles.js
+	const classes = useStyles()
 	const menuItems = [
 		{
 			listIcon: <Home />,

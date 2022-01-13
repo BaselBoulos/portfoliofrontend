@@ -6,22 +6,20 @@ import SendIcon from '@material-ui/icons/Send'
 export const CV = () => {
 	const classes = useStyles()
 	return (
-		<Box component="div" className={classes.cvContainer}>
-			<Grid container justifyContent="center">
-				<Box component="form" className={classes.form}>
-					<Button
-						component={Link}
-						href={baselCV}
-						target="_blank"
-						className={classes.styledButton}
-						variant="outlined"
-						fullWidth={true}
-						endIcon={<SendIcon />}
-					>
-						Download CV (pdf)
-					</Button>
-				</Box>
-			</Grid>
-		</Box>
+		<Grid container justifyContent="center" className={classes.container}>
+			<Box component="form" className={classes.form}>
+				<Button
+					component={Link}
+					href={baselCV}
+					target="_blank"
+					className={classes.styledButton}
+					variant="outlined"
+					fullWidth={true}
+					endIcon={<SendIcon />}
+				>
+					<span>Download CV (pdf)</span>
+				</Button>
+			</Box>
+		</Grid>
 	)
 }

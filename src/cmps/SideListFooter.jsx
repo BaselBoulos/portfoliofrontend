@@ -5,7 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
 export const SideListFooter = () => {
-	const classes = useStyles() // To use the CSS Styles in styles.js
+	const classes = useStyles()
 	const footerLinks = [
 		{
 			icon: <GitHubIcon />,

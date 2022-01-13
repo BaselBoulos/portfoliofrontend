@@ -1,9 +1,17 @@
-html, body {
-    background: url(./assets/img/coffee-apple.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
+html,
+body {
+	background: url(./assets/img/coffee-apple.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
 }

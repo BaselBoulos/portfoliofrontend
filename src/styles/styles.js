@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles(theme => ({
+	appHeader: {
+		background: '#222'
+	},
 	navbarMenu: {
 		width: 250,
 		background: '#511',
@@ -52,13 +55,14 @@ export const useStyles = makeStyles(theme => ({
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		position: 'absolute'
+		position: 'absolute',
+		'max-width': '250px'
 	},
 	root: {
 		'&.MuiAvatar-root': {
 			width: theme.spacing(13),
 			height: theme.spacing(13),
-			margin: '0.5rem auto',
+			margin: '0.5rem auto'
 		},
 		'& .MuiBottomNavigationAction-root': {
 			minWidth: 0,
@@ -89,34 +93,30 @@ export const useStyles = makeStyles(theme => ({
 			}
 		}
 	},
-	aboutBoxContainer: {
-		background: '#233',
-		height: '100vh',
-		textAlign: 'center'
-	},
 	aboutHeaderTitle: {
 		color: 'tomato',
-		textAlign: 'center'
+		padding: '25px'
 	},
 	aboutHeaderSubtitle: {
 		color: 'tan',
 		textAlign: 'center'
-	},
-	contactContainer: {
-		background: '#233',
-		height: '100vh'
 	},
 	contactTypography: {
 		color: 'tomato',
 		textAlign: 'center',
 		textTransform: 'uppercase'
 	},
-	cvContainer: {
-		background: '#233',
-		height: '100vh'
+	errorMsg: {
+		color: 'tomato',
+		textAlign: 'center'
 	},
 	styledButton: {
 		backgroundColor: '#ff6347',
-		textDecoration: 'inherit'
+		textDecoration: 'inherit',
+		'margin-right': '5px'
+	},
+	container:{
+		background: '#233',
+		height: '100vh'
 	}
 }))

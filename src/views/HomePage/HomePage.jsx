@@ -18,9 +18,14 @@ export const HomePage = () => {
 			<Typography className={classes.headerSubtitle} variant="h5">
 				<Typed strings={['Full Stack/Frontend Web Developer']} typeSpeed={40} backSpeed={50} loop />
 			</Typography>
-			<Button component={Link} to="/about" className={classes.styledButton} variant="outlined" fullWidth={false}>
-				About Me
-			</Button>
+			<div>
+				<Button component={Link} to="/about" className={classes.styledButton} variant="outlined" fullWidth={false}>
+					About Me
+				</Button>
+				<Button component={Link} to="/portfolio" className={classes.styledButton} variant="outlined" fullWidth={false}>
+					Portfolio
+				</Button>
+			</div>
 		</Box>
 	)
 }

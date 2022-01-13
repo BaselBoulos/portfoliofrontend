@@ -39,7 +39,7 @@ export const PortfolioPage = () => {
 			description: `MemeGenerator is an application that allows the user to edit chosen image from the gallery and share/download the final
             results to their device`,
 			websiteUrl: 'https://baselboulos.github.io/baselboulos-memegenerator/index.html#',
-			gitHub: '',
+			gitHub: 'https://github.com/BaselBoulos/baselboulos-memegenerator',
 			img: 'memegenerator.png',
 			techs: ['Vanilla JavaScript', 'HTML5', 'CSS3']
 		},
@@ -47,7 +47,7 @@ export const PortfolioPage = () => {
 			title: 'Minesweeper',
 			description: `Minesweeper Clone developed as first sprint in coding academy bootcamp.`,
 			websiteUrl: 'https://baselboulos.github.io/baselboulos-minesweeper/',
-			gitHub: '',
+			gitHub: 'https://github.com/BaselBoulos/baselboulos-minesweeper',
 			img: 'minesweeper.png',
 			techs: ['Vanilla JavaScript', 'HTML5', 'CSS3']
 		}
