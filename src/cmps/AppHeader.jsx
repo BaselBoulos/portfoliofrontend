@@ -1,10 +1,10 @@
 import React, { useState, Suspense } from 'react'
 import { Box, AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
 import MobileRightMenuSlider from '@material-ui/core/Drawer'
-import { useStyles } from '../styles/styles'
 import { ArrowBack } from '@material-ui/icons'
 import { SideList } from './SideList'
 import { SideListFooter } from './SideListFooter'
+import { useStyles } from '../styles/styles'
 
 export const AppHeader = () => {
 	const classes = useStyles()

@@ -1,5 +1,5 @@
-import { Box, Typography } from '@material-ui/core'
 import ReactTyped from 'react-typed'
+import { Box, Typography } from '@material-ui/core'
 import { useStyles } from '../../styles/styles'
 
 export const AboutPage = () => {
@@ -9,11 +9,15 @@ export const AboutPage = () => {
 	<br/>
 	You can also call me a Full Stack / Frontend Web Developer,
 	<br />
+	Practical Software Engineer and Coding Academy Bootcamp Graduate.
+	<br />
+	I am also self-taught in various programming languages and technologies,
+	<br />
 	I enjoy taking complex real world problems, Solving them using my Critical Thinking, 
 	<br />
 	and then implementing with my Technology Toolbelt,
 	<br />
-	(Vue.js, React, Node.js, Express.js, MongoDB and more)
+	(Vue.js, ReactJS, Node.js, Express.js, MongoDB and many more)
 	<br />
 	<br />
 	Fueled by high energy levels and boundless enthusiasm, I'm easily inspired and

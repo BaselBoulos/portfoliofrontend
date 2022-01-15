@@ -1,7 +1,7 @@
-import { useStyles } from '../styles/styles'
 import { Box, Button, Grid, Link } from '@material-ui/core'
 import baselCV from '../assets/files/Basel Boulos - CV - Full-stack-Frontend.pdf'
 import SendIcon from '@material-ui/icons/Send'
+import { useStyles } from '../styles/styles'
 
 export const CV = () => {
 	const classes = useStyles()

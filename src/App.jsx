@@ -9,7 +9,6 @@ import { PortfolioPage } from './views/PortfolioPage/PortfolioPage'
 export function App() {
 	return (
 		<Router>
-			{/* <div className="App"> */}
 			<AppHeader />
 			<Routes>
 				<Route element={<PortfolioPage />} path="/portfolio" />
@@ -18,7 +17,6 @@ export function App() {
 				<Route element={<CV />} path="/cv" />
 				<Route element={<HomePage />} path="/" />
 			</Routes>
-			{/* </div> */}
 		</Router>
 	)
 }

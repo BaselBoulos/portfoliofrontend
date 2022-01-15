@@ -1,17 +1,6 @@
 import { useStyles } from '../../styles/styles'
-import {
-	Box,
-	Grid,
-	Card,
-	CardActionArea,
-	CardActions,
-	CardContent,
-	CardMedia,
-	Typography,
-	BottomNavigationAction,
-	BottomNavigation
-} from '@material-ui/core'
-import GitHubIcon from '@material-ui/icons/GitHub'
+import { ProjectList } from '../../cmps/ProjectList'
+import { Box, Grid } from '@material-ui/core'
 
 export const PortfolioPage = () => {
 	const classes = useStyles()
@@ -19,7 +8,7 @@ export const PortfolioPage = () => {
 		{
 			title: 'Trackero',
 			description: `Trackero is an end-to-end fully functioning task management Web App based on Trello. The App supports personal Task
-        Boards, allowing simple and organized task tracking that separates overarching goals or topics from specific tasks`,
+        Boards, allowing simple and organized task tracking that separates overarching goals or topics from specific tasks.`,
 			websiteUrl: 'https://trackero-proj.herokuapp.com/',
 			gitHub: 'https://github.com/BaselBoulos/trackero',
 			img: 'trackero.png',
@@ -33,6 +22,22 @@ export const PortfolioPage = () => {
 			gitHub: 'https://github.com/BaselBoulos/proj-appsus',
 			img: 'appsus.png',
 			techs: ['Vue.js', 'CSS3']
+		},
+		{
+			title: 'Portfolio',
+			description: `Basel’s portfolio, Developed to present my projects and practice my skills with React and Django for the backend.`,
+			websiteUrl: 'https://www.baselboulos.com/',
+			gitHub: 'https://github.com/BaselBoulos/portfoliofrontend',
+			img: 'portfolio.jpg',
+			techs: ['React', 'Material-UI', 'Django']
+		},
+		{
+			title: 'Mister-Bitcoin',
+			description: `CRUD Bitcoin Digital wallet for holding and sending money to contacts, Includes working with blockchain API and presenting data in Charts.`,
+			websiteUrl: 'https://baselboulos.github.io/proj-mister-bitcoin/#/',
+			gitHub: 'https://github.com/BaselBoulos/proj-mister-bitcoin',
+			img: 'misterbitcoin.jpg',
+			techs: ['React', 'Redux', 'SCSS']
 		},
 		{
 			title: 'Meme Generator',
@@ -50,47 +55,21 @@ export const PortfolioPage = () => {
 			gitHub: 'https://github.com/BaselBoulos/baselboulos-minesweeper',
 			img: 'minesweeper.png',
 			techs: ['Vanilla JavaScript', 'HTML5', 'CSS3']
+		},
+		{
+			title: 'Brain-Trainer',
+			description: `Brain-Trainer College Final Project developed for kids from age 8 to age 12, to learn and practice their thinking abilities and math skills through puzzles and math games with different levels`,
+			websiteUrl: '',
+			gitHub: 'https://github.com/BaselBoulos/Brain-Trainer',
+			img: 'braintrainer.jpg',
+			techs: ['Java', 'JavaFX', 'MySQL']
 		}
 	]
 	return (
 		<>
 			<Box component="div" className={classes.portfolioMainContainer}>
 				<Grid container justifyContent="center" alignItems="center">
-					{projects.map((project, key) => (
-						<Grid key={key} item xs={12} sm={8} md={6}>
-							<Card className={classes.portfolioCardContainer}>
-								<CardActionArea href={project.websiteUrl} target="_blank">
-									<CardMedia component="img" alt={project.title} height="150" image={require(`../../assets/img/${project.img}`)} />
-									<CardContent className={classes.portfolioCardContent}>
-										<Typography gutterBottom variant="h6">
-											{project.title}
-										</Typography>
-										<Typography variant="body2" color="textSecondary" component="p">
-											{project.description}
-										</Typography>
-										<ul className={classes.portfolioCardList}>
-											Utilized:
-											{project.techs.map((tech, key) => {
-												return <li key={key}>{tech} / </li>
-											})}
-										</ul>
-									</CardContent>
-								</CardActionArea>
-								<CardActions>
-									<BottomNavigation width="auto" showLabels className={classes.portfolioCardButtons}>
-										<BottomNavigationAction
-											label="GitHub"
-											icon={
-												<a href={project.gitHub}>
-													<GitHubIcon />
-												</a>
-											}
-										/>
-									</BottomNavigation>
-								</CardActions>
-							</Card>
-						</Grid>
-					))}
+					<ProjectList projects={projects} />
 				</Grid>
 			</Box>
 		</>

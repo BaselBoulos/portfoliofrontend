@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { useStyles } from '../styles/styles'
 import { Box, Avatar, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { AssignmentInd, Home, Apps, ContactMail } from '@material-ui/icons'
 import InfoIcon from '@material-ui/icons/Info'
 import avatar from '../assets/img/avatar.jpg'
+import { useStyles } from '../styles/styles'
 
 export const SideList = ({ toggleSlider }) => {
 	const classes = useStyles()

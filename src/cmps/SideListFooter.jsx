@@ -1,8 +1,8 @@
-import { useStyles } from '../styles/styles'
 import { BottomNavigation, BottomNavigationAction } from '@material-ui/core'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import { useStyles } from '../styles/styles'
 
 export const SideListFooter = () => {
 	const classes = useStyles()

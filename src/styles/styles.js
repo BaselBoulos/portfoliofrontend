@@ -32,7 +32,7 @@ export const useStyles = makeStyles(theme => ({
 		height: '100%'
 	},
 	portfolioCardContainer: {
-		maxWidth: 345,
+		maxWidth: 350,
 		margin: '5rem auto'
 	},
 	portfolioCardContent: {
@@ -50,6 +50,7 @@ export const useStyles = makeStyles(theme => ({
 		gap: '5px',
 		margin: 0,
 		'justify-content': 'center'
+		// 'font-family': 'Roboto'
 	},
 	form: {
 		top: '50%',
@@ -115,7 +116,7 @@ export const useStyles = makeStyles(theme => ({
 		textDecoration: 'inherit',
 		'margin-right': '5px'
 	},
-	container:{
+	container: {
 		background: '#233',
 		height: '100vh'
 	}
