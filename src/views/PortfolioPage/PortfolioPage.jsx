@@ -67,7 +67,7 @@ export const PortfolioPage = () => {
 	]
 	return (
 		<>
-			<Box component="div" className={classes.portfolioMainContainer}>
+			<Box component="div" className={classes.container}>
 				<Grid container justifyContent="center" alignItems="center">
 					<ProjectList projects={projects} />
 				</Grid>
